@@ -167,8 +167,8 @@ footer{padding:48px 0 0;overflow:hidden}
 </div>
 
 <script>
-// Deploy backin-subscribe-worker.js to Cloudflare Workers, then paste its URL here.
-const ENDPOINT = "https://backin-subscribe.YOUR-SUBDOMAIN.workers.dev";
+// Signup is handled by the Worker at /api/subscribe (same origin).
+const ENDPOINT = "/api/subscribe";
 
 const RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 document.querySelectorAll("form.sub").forEach(form => {
